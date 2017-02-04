@@ -7,12 +7,12 @@ angular.module('weddly', [
 .config(function ($routeProvider) {
   $routeProvider
     .when('/store', {
-      templateUrl: '/store.html',
+      templateUrl: 'app/store.html',
       controller: 'storeController'
     })
     .when('/board', {
-      templateUrl: '/board.html',
+      templateUrl: 'app/board.html',
       controller: 'boardController'
     })
 
-    
+    // Your code here

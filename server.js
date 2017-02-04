@@ -1,24 +1,18 @@
-var url = require('url');
 var http = require('http');
-var express = require('express');
+
+//Lets define a port we want to listen to
+const PORT=8080; 
+
+//We need a function which handles requests and send response
+function handleRequest(request, response){
+    response.end('It Works!! Path Hit: ' + request.url);
+}
 
 
-var images = {};
-
-var server = http.createServer(function(request, response) {
+var server = http.createServer(handleRequest);
 
 
-app.get('/store', 
-  function(req, res) { 
-      res.render('store');
-  });
-
-app.get('/board', 
-  function(req, res) { 
-      res.render('board');
-  });
-
-
-
-require('./server').listen(8000, '127.0.0.1');
-console.log('Listening on port 8000...');
+server.listen(PORT, function(){
+    
+    console.log("Server listening on: http://localhost:%s", PORT);
+});
