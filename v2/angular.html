@@ -1,0 +1,40 @@
+<!DOCtype html>
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<style type="text/css">
+  .image {
+   
+    background-image:url('bg.jpeg');
+    background-repeat:no-repeat;
+    height: 600px
+    }
+  </style>
+  <title>Weddly</title>
+  
+  <script src="app.js"></script>
+</head>
+<body ng-app="images" >
+  <div  ng-controller="imageController" >
+    <h1>Images</h1>
+    <input ng-model="newImage"/>
+    <button ng-click = "addImage()">Submit</button>
+    <!--  alt="Smiley face" > -->
+    <ul>
+
+     <li ng-repeat= "image in images track by $index" ng-click="removeTodo($index)"><img ng-src="{{image}}" /li>
+    </ul> 
+
+    <hr>
+   
+    
+    <pre class="image">
+    {{ images | json }}
+    {{newImages}}
+  
+    </pre>
+   
+  </div>
+</body>
+</html>

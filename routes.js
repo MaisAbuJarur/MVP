@@ -4,7 +4,7 @@ angular.module('weddly', [
   'weddly.services'
   
 ])
-.config(function ($routeProvider, $httpProvider) {
+.config(function ($routeProvider) {
   $routeProvider
     .when('/store', {
       templateUrl: 'app/store.html',
