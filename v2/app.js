@@ -11,14 +11,6 @@ angular.module('images',['ngRoute'])
 		$scope.images.splice(index,1)
 	}
 
-	 // $http.post("/", {image}).success(function(message, status) {
-  //       console.log('Message posted');
-    // })
+	
 });
 
-//  $http.post('/angular',$scope.newImage).
-// //         success(function(data) {
-// //             console.log("posted successfully");
-// //         }).error(function(data) {
-// //             console.error("error in posting");
-// //         })

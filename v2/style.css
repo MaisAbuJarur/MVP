@@ -1,8 +1,8 @@
 .pictures {
-	position:relative;
+	float: right;
     width:  350px;
     height: 350px;
-    padding: 5px;
+    padding: 50px;
     text-align: center;
 
 /*    background-position: 50% 50%;*/

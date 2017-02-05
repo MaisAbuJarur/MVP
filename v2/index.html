@@ -3,17 +3,9 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> -->
-  <!-- <script src="/bower_components/angular-route/angular-route.js"></script> -->
+  
   <link rel="stylesheet" type="text/css" src="style.css">
-<!-- <style type="text/css">
-  .image {
-   href
-    background-image:url('bg.jpeg');
-    background-repeat:no-repeat;
-    height: 600px
-    }
-  </style> -->
+
   <title>Weddly</title>
 
 <script src="lib/angular/angular.js"></script>
@@ -23,20 +15,19 @@
 </head>
 <body ng-app="images" >
   <div  ng-controller="imageController" >
-    <h1>IMAGES</h1>
+    <h1>My Image Library</h1>
     <input ng-model="newImage"/>
     <button ng-click = "addImage()">Save</button>
 
     <hr>
 
     
-    <pre class="pictures" ng-repeat= "image in images track by $index" ng-click="removeImage($index)"><img ng-src="{{image}}">
+    <div class="pictures" ng-repeat= "image in images track by $index" ng-click="removeImage($index)"><img ng-src="{{image}}">
 
 
-     <!--  {{ images | json }} -->
-     <!-- {{newImages}} -->
+     
 
-   </pre>
+   </div>
    
 
 

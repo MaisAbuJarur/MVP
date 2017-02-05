@@ -3,7 +3,7 @@ var express = require('express');
 // var fs = require('fs');
 // var bodyParser = require("body-parser");
 //Lets define a port we want to listen to
-var PORT=8080; 
+var PORT= process.env.PORT || 8080; 
 
 // app.use(bodyParser.json());
 var app = express();
