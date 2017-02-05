@@ -1,0 +1,29 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "project file",
+  "main": "routes.js",
+  "dependencies": {
+    "angular-route": "^1.6.1",
+    "express": "^4.14.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "app.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaisAbuJarur/MVP.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "jane-doe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaisAbuJarur/MVP/issues"
+  },
+  "homepage": "https://github.com/MaisAbuJarur/MVP#readme"
+}

@@ -1,8 +1,9 @@
 .pictures {
 	position:relative;
-    width:  200px;
-    height: 200px;
+    width:  350px;
+    height: 350px;
     padding: 5px;
+    text-align: center;
 
 /*    background-position: 50% 50%;*/
 }
