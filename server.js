@@ -24,13 +24,13 @@ app.get('/', function(req, res) {
 
 // require('./config/middleware.js')(app, express);
 
-app.post('/', function(req, res) {
-	// console.log(req.data)
-	var body = "";
-	// filePath = _dirname + 'archive.txt';
-	req.on('data', function(data){
-		body += data;
-	})
+// app.post('/', function(req, res) {
+// 	// console.log(req.data)
+// 	var body = "";
+// 	// filePath = _dirname + 'archive.txt';
+// 	req.on('data', function(data){
+// 		body += data;
+// 	})
 // 	respond.end(body)
 	// request.on('end', function (){
 	// 	fs.appendFile(filePath, body, function(){
@@ -39,7 +39,7 @@ app.post('/', function(req, res) {
 	// })
 
 
-})
+// })
  // app.post('/login', function(req, res) {
  //     console.log('Processing request...');
  //     res.sendFile('/success.html');

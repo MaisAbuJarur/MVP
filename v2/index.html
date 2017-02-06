@@ -8,14 +8,14 @@
 
   <title>Weddly</title>
 
-<script src="lib/angular/angular.js"></script>
-<script src="lib/angular-route/angular-route.js"></script>
-<script src="app.js"></script>
-   
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+
 </head>
 <body ng-app="images" >
   <div  ng-controller="imageController" >
-    <h1>My Image Library</h1>
+  <h1>SCRAPBOOK</h1>
     <input ng-model="newImage"/>
     <button ng-click = "addImage()">Save</button>
 
@@ -25,11 +25,11 @@
     <div class="pictures" ng-repeat= "image in images track by $index" ng-click="removeImage($index)"><img ng-src="{{image}}">
 
 
-     
-
-   </div>
-   
 
 
- </body>
- </html>
+    </div>
+
+
+
+  </body>
+  </html>
